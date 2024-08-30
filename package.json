@@ -1,0 +1,19 @@
+{
+	"name": "rocketbase",
+	"module": "src/index.ts",
+	"type": "module",
+	"version": "0.0.2",
+	"main": "dist/index.js",
+	"description": "sdk for rocketbase standalone backend",
+	"scripts": {
+		"dev": "bun --hot src/index.ts",
+		"build": "bun build src/index.ts --outdir dist --target browser",
+		"watch": "bun build src/index.ts --outdir dist --watch"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
